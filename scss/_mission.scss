@@ -1,0 +1,26 @@
+// ===== MISSION =====
+.mission { background: $green-pale; }
+.mission__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 2px solid $green-primary;
+  border-radius: $radius;
+  overflow: hidden;
+  box-shadow: $shadow;
+}
+.mission__block {
+  padding: 40px;
+  &--dark {
+    background: $green-dark;
+    color: $white;
+    h2 { color: $white; text-align: center; }
+    p { color: rgba(255, 255, 255, 0.8); }
+  }
+  &--light {
+    background: $white;
+    h2 { color: $green-dark; text-align: center; }
+    p { color: $text-gray; }
+  }
+  p { margin-top: 10px; }
+}

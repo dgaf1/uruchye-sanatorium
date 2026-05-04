@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование — Санаторий Уручье</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="icons/logo.svg" alt="Санаторий Уручье" class="logo__img"></a>
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="about.html" class="nav__link">О санатории</a></li>
+                        <li class="nav__item"><a href="medicine.html" class="nav__link">Медицина</a></li>
+                        <li class="nav__item"><a href="rooms.html" class="nav__link">Номера</a></li>
+                        <li class="nav__item"><a href="booking.html" class="nav__link nav__link--active">Бронирование</a></li>
+                    </ul>
+                </nav>
+                <a href="booking.html" class="btn btn--green btn--sm header__btn">Забронировать</a>
+                <button class="burger" id="burger" aria-label="Меню"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container"><h1 class="page-hero__title">Бронирование</h1><p class="page-hero__subtitle">Забронируйте ваше пребывание в санатории Уручье.</p></div>
+        </section>
+
+        <section class="section">
+            <div class="container booking-form__wrapper">
+                <h2 class="section__title">Забронируйте ваш отдых</h2>
+                <form class="booking-form" id="mainBookingForm">
+                    <div class="booking-form__row">
+                        <div class="booking-form__field"><label>Дата заезда *</label><input type="date" id="book-checkin" required></div>
+                        <div class="booking-form__field"><label>Дата выезда *</label><input type="date" id="book-checkout" required></div>
+                        <div class="booking-form__field"><label>Количество гостей</label><select id="book-guests"><option value="1">1 гость</option><option value="2">2 гостя</option><option value="3">3 гостя</option><option value="4">4 гостя</option></select></div>
+                    </div>
+                    <div class="booking-form__row">
+                        <div class="booking-form__field"><label>Тип номера *</label><select id="book-room" required><option value="">Выберите...</option><option value="standard">Стандартный</option><option value="deluxe">Делюкс</option><option value="junior">Полулюкс</option><option value="executive">Люкс</option></select></div>
+                        <div class="booking-form__field"><label>Медицинская программа</label><select id="book-program"><option value="">Общая</option><option value="balneology">Бальнеотерапия</option><option value="massage">Лечебный массаж</option><option value="physio">Физиотерапия</option><option value="diagnostic">Медицинская диагностика</option><option value="cardio">Кардиология</option><option value="neuro">Нейротерапия</option><option value="ortho">Ортопедия</option><option value="phyto">Фитотерапия</option><option value="respiratory">Респираторная помощь</option></select></div>
+                        <div class="booking-form__field"><label>Телефон *</label><input type="text" id="book-contact" placeholder="+375 __ ___ __ __" required></div>
+                    </div>
+                    <button type="submit" class="btn btn--green btn--lg btn--center">Бронировать</button>
+                </form>
+                <div class="booking-form__success" id="bookingFormSuccess">✅ Спасибо! Наш менеджер свяжется с вами в ближайшее время.</div>
+            </div>
+        </section>
+
+        <section class="section section--light">
+            <div class="container">
+                <div class="contact-info__grid">
+                    <div class="contact-info-card"><h3><img src="icons/location.svg" alt=""> Адрес</h3><p>Минск, Рогачевская улица, 2к22</p></div>
+                    <div class="contact-info-card"><h3><img src="icons/phone.svg" alt=""> Телефон</h3><p>+375 29 686-03-07</p><p>+375 25 689-12-62</p></div>
+                    <div class="contact-info-card"><h3><img src="icons/email.svg" alt=""> Email</h3><p>info.uruchye@gmail.com</p><p>bronuruchye@gmail.com</p></div>
+                    <div class="contact-info-card"><h3><img src="icons/clock.svg" alt=""> Часы работы</h3><p>Круглосуточно</p><p>Заезд: 14:00 | Выезд: 12:00</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section" id="map">
+            <div class="container">
+                <div class="map__wrapper">
+                    <div class="map__container">
+                        <div class="map__frame">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=27.712329%2C53.938733&mode=search&ol=geo&z=16&pt=27.712329,53.938733,pm2rdl" loading="lazy" title="Санаторий Уручье на карте"></iframe>
+                        </div>
+                        <div class="map__info">
+                            <h3>Как добраться</h3>
+                            <ul>
+                                <li><img src="icons/car.svg" alt=""> 30 минут от центра Минска</li>
+                                <li><img src="icons/plane.svg" alt=""> 40 минут от Национального аэропорта</li>
+                                <li><img src="icons/shuttle.svg" alt=""> Бесплатный трансфер</li>
+                                <li><img src="icons/parking.svg" alt=""> Бесплатная парковка</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="help">
+            <div class="container contact-form__wrapper">
+                <h2 class="section__title">Отправить сообщение</h2>
+                <p class="section__subtitle">Есть вопросы? Заполните форму, и мы ответим в течение 24 часов.</p>
+                <form class="contact-form" id="contactForm">
+                    <div class="contact-form__row contact-form__row--triple">
+                        <div class="contact-form__field"><label>Полное имя *</label><input type="text" id="contact-name" required></div>
+                        <div class="contact-form__field"><label>Email *</label><input type="email" id="contact-email" required></div>
+                        <div class="contact-form__field"><label>Телефон</label><input type="tel" id="contact-phone"></div>
+                    </div>
+                    <div class="contact-form__row">
+                        <div class="contact-form__field contact-form__field--wide"><label>Сообщение *</label><textarea id="contact-message" rows="5" required></textarea></div>
+                    </div>
+                    <button type="submit" class="btn btn--green btn--lg btn--center">Отправить сообщение</button>
+                </form>
+                <div class="contact-form__success" id="contactFormSuccess">✅ Ваше сообщение успешно отправлено! Мы ответим в течение 24 часов.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <h2 class="footer__title">Санаторий Уручье</h2>
+                <p class="footer__desc">Премиальный медицинский спа-курорт в самом сердце Беларуси.</p>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">Навигация</h2>
+                <ul class="footer__list">
+                    <li><a href="index.html" class="footer__link">Главная</a></li>
+                    <li><a href="about.html" class="footer__link">О санатории</a></li>
+                    <li><a href="medicine.html" class="footer__link">Медицина</a></li>
+                    <li><a href="rooms.html" class="footer__link">Номера</a></li>
+                    <li><a href="booking.html" class="footer__link">Бронирование</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">Общее</h2>
+                <ul class="footer__list">
+                    <li><a href="medicine.html" class="footer__link">Лечение</a></li>
+                    <li><a href="index.html#news" class="footer__link">Новости</a></li>
+                    <li><a href="booking.html#map" class="footer__link">Как добраться</a></li>
+                    <li><a href="booking.html#help" class="footer__link">Помощь</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">Контакты</h2>
+                <p><img src="icons/phone.svg" alt="" width="22" height="22"> <a href="tel:+375296860307" class="footer__link">+375 29 686-03-07</a></p>
+                <p><img src="icons/email.svg" alt="" width="22" height="22"> <a href="mailto:info.uruchye@gmail.com" class="footer__link">info.uruchye@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer__bottom"><div class="container"><p>© 2026 Санаторий Уручье. Все права защищены.</p></div></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

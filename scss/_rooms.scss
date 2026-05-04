@@ -1,0 +1,90 @@
+// ===== ROOMS =====
+.rooms__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.room-card {
+  border: 2px solid $green-primary;
+  border-radius: $radius;
+  overflow: hidden;
+  box-shadow: $shadow;
+  transition: transform $transition;
+  display: flex;
+  flex-direction: column;
+  &:hover { transform: scale(1.05); }
+  &__image {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    background: $green-dark;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+  }
+  &:hover &__image img { transform: scale(1.06); }
+  &__badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: $green-primary;
+    color: $white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  &__body {
+    background: $sand-light;
+    padding: 24px;
+    flex: 1;
+  }
+  &__price {
+    font-family: $font-heading;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: $green-dark;
+    margin-bottom: 4px;
+    span {
+      font-size: 0.85rem;
+      color: $text-gray;
+      font-weight: 400;
+    }
+  }
+  &__name {
+    margin-bottom: 6px;
+    color: $green-dark;
+  }
+  &__meta {
+    color: $text-gray;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+  &__desc {
+    color: $text-gray;
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+  }
+  &__amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+    color: $text-gray;
+    span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      opacity: 0.6;
+    }
+  }
+  &__btn { margin-top: auto; }
+}

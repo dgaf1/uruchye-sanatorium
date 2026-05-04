@@ -1,0 +1,36 @@
+// ===== BUTTONS =====
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: $radius-sm;
+  font-family: $font-heading;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all $transition;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+
+  &--green {
+    background: $green-primary;
+    color: $white;
+    &:hover {
+      background: $green-dark;
+      transform: translateY(-2px);
+      box-shadow: $shadow-hover;
+    }
+  }
+  &--lg {
+    padding: 16px 40px;
+    font-size: 1.05rem;
+  }
+  &--sm {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+  &--center {
+    display: block;
+    margin: 20px auto 0;
+    width: fit-content;
+  }
+}

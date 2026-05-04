@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rooms>
+    <room>
+        <name>Стандартный номер</name>
+        <price>230</price>
+        <size>22 м²</size>
+        <capacity>1–2 гостя</capacity>
+        <description>Комфортабельный и элегантный номер с современными удобствами.</description>
+        <image>images/room-standard.jpg</image>
+        <amenity>Бесплатный Wi-Fi</amenity>
+        <amenity>Телевизор</amenity>
+        <amenity>Кондиционер</amenity>
+        <amenity>Собственная ванная</amenity>
+        <amenity>Ежедневная уборка</amenity>
+        <amenity>Мини-холодильник</amenity>
+    </room>
+    <room>
+        <name>Делюкс</name>
+        <price>340</price>
+        <size>32 м²</size>
+        <capacity>1–2 гостя</capacity>
+        <description>Просторный номер для тех, кто ценит комфорт и внимание к деталям. Всё продумано так, чтобы вы отдыхали, а не думали о мелочах.</description>
+        <image>images/room-deluxe.jpg</image>
+        <badge>★ Самый популярный</badge>
+        <amenity>Бесплатный Wi-Fi</amenity>
+        <amenity>Smart TV</amenity>
+        <amenity>Кондиционер</amenity>
+        <amenity>Премиум-ванная</amenity>
+        <amenity>Халаты и тапочки</amenity>
+        <amenity>Кофемашина</amenity>
+        <amenity>Балкон</amenity>
+    </room>
+    <room>
+        <name>Полулюкс</name>
+        <price>480</price>
+        <size>45 м²</size>
+        <capacity>2–3 гостя</capacity>
+        <description>Пространство разделено на спальню и зону отдыха. Можно принять гостей или просто наслаждаться тишиной в своём ритме.</description>
+        <image>images/room-junior.jpg</image>
+        <amenity>Бесплатный Wi-Fi</amenity>
+        <amenity>Smart TV</amenity>
+        <amenity>Кондиционер</amenity>
+        <amenity>Отдельная гостиная</amenity>
+        <amenity>Премиум-ванная</amenity>
+        <amenity>Халаты и тапочки</amenity>
+        <amenity>Чай и кофе</amenity>
+        <amenity>Балкон с видом на лес</amenity>
+    </room>
+    <room>
+        <name>Люкс</name>
+        <price>650</price>
+        <size>65 м²</size>
+        <capacity>2–4 гостя</capacity>
+        <description>Самый престижный номер с отдельной спальней и панорамным видом на лес. Здесь можно и лечиться, и просто жить в своё удовольствие.</description>
+        <image>images/room-executive.jpg</image>
+        <amenity>Бесплатный Wi-Fi</amenity>
+        <amenity>Smart TV и аудиосистема</amenity>
+        <amenity>Климат-контроль</amenity>
+        <amenity>Отдельная спальня и гостиная</amenity>
+        <amenity>Ванная с джакузи</amenity>
+        <amenity>Премиум-косметика</amenity>
+        <amenity>Кофемашина Nespresso</amenity>
+        <amenity>Собственная терраса</amenity>
+        <amenity>Welcome-шампанское</amenity>
+    </room>
+</rooms>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<news>
+    <item>
+        <title>Весенний оздоровительный пакет</title>
+        <description>Специальная 7-дневная программа омоложения со скидкой 20%. Доступно до 31 мая.</description>
+        <badge>Новое</badge>
+        <image>images/news-spring.jpg</image>
+    </item>
+    <item>
+        <title>Открытие нового термального бассейна</title>
+        <description>Теперь нашим гостям доступен новый термальный бассейн с минеральной водой из собственного источника.</description>
+        <badge>Событие</badge>
+        <image>images/news-pool.jpg</image>
+    </item>
+    <item>
+        <title>Осенняя программа реабилитации</title>
+        <description>Комплексная программа восстановления опорно-двигательного аппарата с консультацией ведущих ортопедов.</description>
+        <badge>Скоро</badge>
+        <image>images/news-autumn.jpg</image>
+    </item>
+</news>

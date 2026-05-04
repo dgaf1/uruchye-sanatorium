@@ -1,0 +1,9 @@
+// ===== TYPOGRAPHY =====
+h1, h2, h3, h4 {
+  font-family: $font-heading;
+  font-weight: 600;
+  line-height: 1.3;
+}
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); }
+h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }

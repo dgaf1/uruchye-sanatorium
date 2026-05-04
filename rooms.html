@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Номера — Санаторий Уручье</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="icons/logo.svg" alt="Санаторий Уручье" class="logo__img"></a>
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="about.html" class="nav__link">О санатории</a></li>
+                        <li class="nav__item"><a href="medicine.html" class="nav__link">Медицина</a></li>
+                        <li class="nav__item"><a href="rooms.html" class="nav__link nav__link--active">Номера</a></li>
+                        <li class="nav__item"><a href="booking.html" class="nav__link">Бронирование</a></li>
+                    </ul>
+                </nav>
+                <a href="booking.html" class="btn btn--green btn--sm header__btn">Забронировать</a>
+                <button class="burger" id="burger" aria-label="Меню"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button>
+            </div>
+        </div>
+        <div class="header__bar" id="headerBar">
+            <div class="container">
+                <div class="header__bar-field"><label>Дата заезда</label><input type="date" id="hb-checkin"></div>
+                <div class="header__bar-field"><label>Дата выезда</label><input type="date" id="hb-checkout"></div>
+                <div class="header__bar-field"><label>Количество гостей</label><select id="hb-guests"><option value="1">1 гость</option><option value="2">2 гостя</option><option value="3">3 гостя</option><option value="4">4 гостя</option></select></div>
+                <div class="header__bar-field"><label>Тип номера</label><select id="hb-room"><option value="">Выберите...</option><option value="standard">Стандартный</option><option value="deluxe">Делюкс</option><option value="junior">Полулюкс</option><option value="executive">Люкс</option></select></div>
+                <button class="btn btn--green btn--sm" id="hb-submit">Бронировать</button>
+                <span class="header__bar-success" id="hb-success">✅ Заявка на бронирование отправлена</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container"><h1 class="page-hero__title">Номера</h1><p class="page-hero__subtitle">Уютные номера для спокойного отдыха — выбирайте свой.</p></div>
+        </section>
+
+        <div class="section">
+            <div class="container"><div class="rooms__grid" id="roomsGrid"></div></div>
+        </div>
+
+        <section class="amenities section section--light">
+            <div class="container">
+                <h2 class="section__title">Всё включено</h2>
+                <p class="section__subtitle">Стандартные удобства в каждом номере</p>
+                <div class="amenities__grid">
+                    <div class="amenity-card"><div class="amenity-card__icon"><img src="icons/wifi.svg" alt=""></div><p>Бесплатный Wi-Fi</p></div>
+                    <div class="amenity-card"><div class="amenity-card__icon"><img src="icons/coffee.svg" alt=""></div><p>Чай и кофе</p></div>
+                    <div class="amenity-card"><div class="amenity-card__icon"><img src="icons/tv.svg" alt=""></div><p>Smart TV</p></div>
+                    <div class="amenity-card"><div class="amenity-card__icon"><img src="icons/ac.svg" alt=""></div><p>Кондиционер</p></div>
+                    <div class="amenity-card"><div class="amenity-card__icon"><img src="icons/bathroom.svg" alt=""></div><p>Премиум-ванная</p></div>
+                    <div class="amenity-card"><div class="amenity-card__icon"><img src="icons/sofa.svg" alt=""></div><p>Мягкая мебель</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section">
+            <div class="container cta__container">
+                <h2 class="cta__title">Готовы забронировать?</h2>
+                <p class="cta__subtitle">Забронируйте номер сегодня и получите специальные тарифы на длительное проживание и оздоровительные пакеты.</p>
+                <a href="booking.html" class="btn btn--green btn--lg">Проверить доступность</a>
+            </div>
+        </section>
+    </main>
+
+                <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <h2 class="footer__title">Санаторий Уручье</h2>
+                <p class="footer__desc">Премиальный медицинский спа-курорт в самом сердце Беларуси.</p>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">Навигация</h2>
+                <ul class="footer__list">
+                    <li><a href="index.html" class="footer__link">Главная</a></li>
+                    <li><a href="about.html" class="footer__link">О санатории</a></li>
+                    <li><a href="medicine.html" class="footer__link">Медицина</a></li>
+                    <li><a href="rooms.html" class="footer__link">Номера</a></li>
+                    <li><a href="booking.html" class="footer__link">Бронирование</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">Общее</h2>
+                <ul class="footer__list">
+                    <li><a href="medicine.html" class="footer__link">Лечение</a></li>
+                    <li><a href="index.html#news" class="footer__link">Новости</a></li>
+                    <li><a href="booking.html#map" class="footer__link">Как добраться</a></li>
+                    <li><a href="booking.html#help" class="footer__link">Помощь</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">Контакты</h2>
+                <p><img src="icons/phone.svg" alt="" width="22" height="22"> <a href="tel:+375296860307" class="footer__link">+375 29 686-03-07</a></p>
+                <p><img src="icons/email.svg" alt="" width="22" height="22"> <a href="mailto:info.uruchye@gmail.com" class="footer__link">info.uruchye@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer__bottom"><div class="container"><p>© 2026 Санаторий Уручье. Все права защищены.</p></div></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

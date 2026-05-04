@@ -1,0 +1,65 @@
+// ===== RESPONSIVE =====
+@media (max-width: 992px) {
+  .header__bar .container { flex-wrap: wrap; }
+  .header__bar-field { flex: 1 1 45%; }
+  .burger { display: flex; }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 280px;
+    height: 100vh;
+    background: $white;
+    padding: 100px 30px 30px;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+    transition: right 0.35s ease;
+    z-index: 999;
+    display: block;
+    &--open { right: 0; }
+    &__list {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__link {
+      font-size: 1.1rem;
+      padding: 8px 0;
+    }
+  }
+  .overlay--active { display: block; }
+  .advantages__grid { grid-template-columns: 1fr; max-width: 450px; margin: 0 auto; }
+  .story__container { grid-template-columns: 1fr; }
+  .mission__container { grid-template-columns: 1fr; }
+  .stats__grid { grid-template-columns: repeat(2, 1fr); }
+  .services__grid { grid-template-columns: repeat(2, 1fr); }
+  .rooms__grid { grid-template-columns: 1fr; max-width: 550px; margin: 0 auto; }
+  .amenities__grid { grid-template-columns: repeat(3, 1fr); }
+  .contact-info__grid { grid-template-columns: repeat(2, 1fr); }
+  .footer__container { grid-template-columns: 1fr 1fr; }
+  .booking-form__row,
+  .contact-form__row { grid-template-columns: 1fr 1fr; }
+  .contact-form__row--triple { grid-template-columns: 1fr 1fr; }
+  .map__container { flex-direction: column; }
+  .map__frame { flex: 0 0 350px; }
+  .objects__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 50px 0; }
+  .header__bar-field { flex: 1 1 100%; }
+  .booking-form__row,
+  .contact-form__row { grid-template-columns: 1fr; }
+  .contact-form__row--triple { grid-template-columns: 1fr; }
+  .news__arrow--prev { left: 4px; }
+  .news__arrow--next { right: 4px; }
+  .objects__grid { grid-template-columns: repeat(2, 1fr); }
+  .objects__grid .object-card:nth-child(10) { grid-column: 1 / -1; max-width: 200px; }
+}
+
+@media (max-width: 576px) {
+  .stats__grid { grid-template-columns: 1fr; }
+  .services__grid { grid-template-columns: 1fr; }
+  .amenities__grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-info__grid { grid-template-columns: 1fr; }
+  .footer__container { grid-template-columns: 1fr; }
+  .objects__grid { grid-template-columns: 1fr 1fr; }
+}

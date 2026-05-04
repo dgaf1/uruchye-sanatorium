@@ -1,0 +1,75 @@
+// ===== SERVICES =====
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.service-card {
+  border: 2px solid $green-primary;
+  border-radius: $radius;
+  overflow: hidden;
+  box-shadow: $shadow;
+  transition: transform $transition;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  &:hover { transform: scale(1.05); }
+  &__bg {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__overlay-box {
+    position: absolute;
+    bottom: 40px;
+    left: 16px;
+    right: 16px;
+    background: $white;
+    border-radius: $radius-sm;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    z-index: 2;
+  }
+  &__icon img {
+    width: 36px;
+    height: 36px;
+  }
+  &__title {
+    color: $green-dark;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  &__body {
+    padding: 20px;
+    flex: 1;
+    background: $white;
+  }
+  &__desc {
+    color: $text-gray;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  &__list {
+    padding-left: 16px;
+    li {
+      color: $text-light;
+      font-size: 0.85rem;
+      margin-bottom: 3px;
+      &::before {
+        content: '•';
+        color: $green-primary;
+        margin-right: 6px;
+      }
+    }
+  }
+}

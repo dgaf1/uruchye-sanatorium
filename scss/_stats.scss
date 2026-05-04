@@ -1,0 +1,25 @@
+// ===== STATS =====
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.stat-card {
+  background: $white;
+  border-radius: $radius;
+  padding: 32px 20px;
+  text-align: center;
+  box-shadow: $shadow;
+  transition: transform $transition;
+  &:hover { transform: scale(1.05); }
+  &__number {
+    font-family: $font-heading;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: $green-primary;
+  }
+  &__label {
+    color: $text-gray;
+    margin-top: 6px;
+  }
+}

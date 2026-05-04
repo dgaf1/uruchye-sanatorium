@@ -1,0 +1,15 @@
+// ===== CTA =====
+.cta {
+  text-align: center;
+  background: linear-gradient(135deg, $green-dark, $green-primary);
+  color: $white;
+  &__container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  &__title { margin-bottom: 10px; }
+  &__subtitle {
+    margin-bottom: 24px;
+    opacity: 0.85;
+  }
+}

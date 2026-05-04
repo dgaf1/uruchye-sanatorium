@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+    <service>
+        <name>Бальнеотерапия</name>
+        <description>Лечебное использование минеральных термальных вод для лечения хронических заболеваний, улучшения кровообращения и расслабления.</description>
+        <icon>icons/service-balneology.svg</icon>
+        <bg>images/service-balneology.jpg</bg>
+        <procedure>Минеральные ванны</procedure>
+        <procedure>Гидротерапия</procedure>
+        <procedure>Подводный массаж</procedure>
+    </service>
+    <service>
+        <name>Лечебный массаж</name>
+        <description>Экспертная массажная терапия, сочетающая традиционные техники с современными медицинскими знаниями.</description>
+        <icon>icons/service-massage.svg</icon>
+        <bg>images/service-massage.jpg</bg>
+        <procedure>Глубокий массаж тканей</procedure>
+        <procedure>Спортивный массаж</procedure>
+        <procedure>Лимфодренаж</procedure>
+    </service>
+    <service>
+        <name>Физиотерапия</name>
+        <description>Индивидуальные программы реабилитации с использованием современного оборудования.</description>
+        <icon>icons/service-physio.svg</icon>
+        <bg>images/service-physio.jpg</bg>
+        <procedure>Лечебная физкультура</procedure>
+        <procedure>Электротерапия</procedure>
+        <procedure>Мануальная терапия</procedure>
+    </service>
+    <service>
+        <name>Медицинская диагностика</name>
+        <description>Современное диагностическое оборудование и опытные специалисты для комплексной оценки здоровья.</description>
+        <icon>icons/service-diagnostic.svg</icon>
+        <bg>images/service-diagnostic.jpg</bg>
+        <procedure>Лабораторные анализы</procedure>
+        <procedure>УЗИ</procedure>
+        <procedure>Мониторинг ЭКГ</procedure>
+    </service>
+    <service>
+        <name>Кардиология</name>
+        <description>Специализированная кардиологическая помощь и программы реабилитации.</description>
+        <icon>icons/service-cardio.svg</icon>
+        <bg>images/service-cardio.jpg</bg>
+        <procedure>Кардиореабилитация</procedure>
+        <procedure>Стресс-тестирование</procedure>
+        <procedure>Холтеровское мониторирование</procedure>
+    </service>
+    <service>
+        <name>Нейротерапия</name>
+        <description>Передовые методы лечения неврологических состояний.</description>
+        <icon>icons/service-neuro.svg</icon>
+        <bg>images/service-neuro.jpg</bg>
+        <procedure>Нейрофидбек</procedure>
+        <procedure>Когнитивная терапия</procedure>
+        <procedure>Управление болью</procedure>
+    </service>
+    <service>
+        <name>Ортопедия</name>
+        <description>Лечение и реабилитация опорно-двигательного аппарата.</description>
+        <icon>icons/service-ortho.svg</icon>
+        <bg>images/service-ortho.jpg</bg>
+        <procedure>Терапия суставов</procedure>
+        <procedure>Лечение позвоночника</procedure>
+        <procedure>Послеоперационная реабилитация</procedure>
+    </service>
+    <service>
+        <name>Фитотерапия</name>
+        <description>Природное оздоровление с использованием лекарственных растений и трав.</description>
+        <icon>icons/service-phyto.svg</icon>
+        <bg>images/service-phyto.jpg</bg>
+        <procedure>Травяное лечение</procedure>
+        <procedure>Ароматерапия</procedure>
+        <procedure>Натуральные средства</procedure>
+    </service>
+    <service>
+        <name>Респираторная помощь</name>
+        <description>Специализированные программы для здоровья дыхательной системы.</description>
+        <icon>icons/service-respiratory.svg</icon>
+        <bg>images/service-respiratory.jpg</bg>
+        <procedure>Ингаляционная терапия</procedure>
+        <procedure>Дыхательные упражнения</procedure>
+        <procedure>Лесные ванны</procedure>
+    </service>
+</services>

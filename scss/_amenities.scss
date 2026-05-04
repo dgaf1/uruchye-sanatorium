@@ -1,0 +1,28 @@
+// ===== AMENITIES =====
+.amenities__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.amenity-card {
+  background: $white;
+  border-radius: $radius;
+  padding: 24px 16px;
+  text-align: center;
+  box-shadow: $shadow;
+  transition: transform $transition;
+  &:hover { transform: scale(1.05); }
+  &__icon {
+    margin-bottom: 8px;
+    img {
+      width: 42px;
+      height: 42px;
+      margin: 0 auto;
+    }
+  }
+  p {
+    font-weight: 500;
+    color: $green-dark;
+    font-size: 0.9rem;
+  }
+}

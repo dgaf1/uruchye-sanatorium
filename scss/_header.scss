@@ -1,0 +1,111 @@
+// ===== HEADER =====
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: $white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+  &__top {
+    height: $header-top-h;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  &__img {
+    height: 76px;
+    width: auto;
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__link {
+    font-weight: 500;
+    color: $text-dark;
+    transition: color $transition;
+    position: relative;
+    padding-bottom: 4px;
+    font-size: 0.95rem;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $green-primary;
+      transition: width $transition;
+    }
+    &:hover,
+    &--active {
+      color: $green-primary;
+      &::after { width: 100%; }
+    }
+  }
+}
+
+// Booking bar
+.header__bar {
+  background: $green-bar;
+  padding: 8px 0;
+  .container {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  &-field {
+    flex: 1;
+    min-width: 140px;
+    label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: $text-gray;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    input,
+    select {
+      width: 100%;
+      padding: 7px 10px;
+      border: 1.5px solid #e0e0e0;
+      border-radius: $radius-sm;
+      font-size: 0.85rem;
+      background: $white;
+      transition: border $transition;
+      &:focus {
+        outline: none;
+        border-color: $green-primary;
+      }
+    }
+  }
+  .btn {
+    white-space: nowrap;
+    padding: 7px 18px;
+    font-size: 0.85rem;
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
+  &-success {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+    font-size: 0.9rem;
+    color: $green-primary;
+    font-weight: 500;
+  }
+}

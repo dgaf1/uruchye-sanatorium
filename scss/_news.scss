@@ -1,0 +1,91 @@
+// ===== NEWS SLIDER =====
+.news__wrapper {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.news__track {
+  overflow: hidden;
+  border-radius: $radius;
+}
+.news__card {
+  display: none;
+  background: $white;
+  border-radius: $radius;
+  overflow: hidden;
+  box-shadow: $shadow;
+  &--active { display: block; }
+  &-image {
+    height: 280px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-body { padding: 24px; }
+  &-badge {
+    display: inline-block;
+    background: $green-primary;
+    color: $white;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &-title {
+    color: $green-dark;
+    margin-bottom: 8px;
+  }
+  &-desc {
+    color: $text-gray;
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+  }
+  &-link {
+    color: $green-primary;
+    font-weight: 600;
+    font-size: 0.9rem;
+    &:hover { color: $green-mid; }
+  }
+}
+.news__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: $white;
+  box-shadow: $shadow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: $green-dark;
+  transition: all $transition;
+  z-index: 2;
+  &:hover {
+    background: $green-primary;
+    color: $white;
+  }
+  &--prev { left: -18px; }
+  &--next { right: -18px; }
+}
+.news__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.news__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  transition: background $transition;
+  cursor: pointer;
+  &--active { background: $green-primary; }
+}

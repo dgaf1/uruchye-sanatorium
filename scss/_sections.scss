@@ -1,0 +1,19 @@
+// ===== SECTIONS =====
+.section {
+  padding: 80px 0;
+  &--light { background: $sand-light; }
+  &--green-light { background: $green-pale; }
+  &__title {
+    text-align: center;
+    color: $green-dark;
+    margin-bottom: 12px;
+    &--left { text-align: left; }
+  }
+  &__subtitle {
+    text-align: center;
+    color: $text-gray;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 1.05rem;
+  }
+}

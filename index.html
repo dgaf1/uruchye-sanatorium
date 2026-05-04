@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Санаторий Уручье — Здоровье через природу и науку</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="icons/logo.svg" alt="Санаторий Уручье" class="logo__img">
+                </a>
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="about.html" class="nav__link">О санатории</a></li>
+                        <li class="nav__item"><a href="medicine.html" class="nav__link">Медицина</a></li>
+                        <li class="nav__item"><a href="rooms.html" class="nav__link">Номера</a></li>
+                        <li class="nav__item"><a href="booking.html" class="nav__link">Бронирование</a></li>
+                    </ul>
+                </nav>
+                <a href="booking.html" class="btn btn--green btn--sm header__btn">Забронировать</a>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </div>
+        </div>
+        <div class="header__bar" id="headerBar">
+            <div class="container">
+                <div class="header__bar-field"><label>Дата заезда</label><input type="date" id="hb-checkin"></div>
+                <div class="header__bar-field"><label>Дата выезда</label><input type="date" id="hb-checkout"></div>
+                <div class="header__bar-field"><label>Количество гостей</label><select id="hb-guests"><option value="1">1 гость</option><option value="2">2 гостя</option><option value="3">3 гостя</option><option value="4">4 гостя</option></select></div>
+                <div class="header__bar-field"><label>Тип номера</label><select id="hb-room"><option value="">Выберите...</option><option value="standard">Стандартный</option><option value="deluxe">Делюкс</option><option value="junior">Полулюкс</option><option value="executive">Люкс</option></select></div>
+                <button class="btn btn--green btn--sm" id="hb-submit">Бронировать</button>
+                <span class="header__bar-success" id="hb-success">✅ Заявка на бронирование отправлена</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <div class="container">
+                    <h1 class="hero__title">Здоровье через природу и науку</h1>
+                    <p class="hero__subtitle">Испытайте премиальную медицинскую помощь и омоложение в сердце первозданных белорусских лесов. Ваш путь к здоровью начинается здесь.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages section">
+            <div class="container">
+                <h2 class="section__title">Почему выбирают Уручье</h2>
+                <p class="section__subtitle">Природа, медицина и комфорт — всё, что нужно для полноценного отдыха.</p>
+                <div class="advantages__grid">
+                    <article class="advantage-card">
+                        <div class="advantage-card__image"><img src="images/advantage-nature.jpg" alt="Природное оздоровление" loading="lazy"></div>
+                        <h3 class="advantage-card__title">Природное оздоровление</h3>
+                        <p class="advantage-card__desc">Лесной воздух, тишина и спокойствие — то, чего не хватает в городе. Наш санаторий находится прямо в лесном массиве Уручье, и природа здесь не фон, а часть лечения.</p>
+                    </article>
+                    <article class="advantage-card">
+                        <div class="advantage-card__image"><img src="images/advantage-medical.jpg" alt="Современная медицина" loading="lazy"></div>
+                        <h3 class="advantage-card__title">Современная медицина</h3>
+                        <p class="advantage-card__desc">Точная диагностика, проверенные методики и опытные врачи, которым можно доверять. Ваше здоровье в надёжных руках.</p>
+                    </article>
+                    <article class="advantage-card">
+                        <div class="advantage-card__image"><img src="images/advantage-service.jpg" alt="Всё для вашего удобства" loading="lazy"></div>
+                        <h3 class="advantage-card__title">Всё для вашего удобства</h3>
+                        <p class="advantage-card__desc">Просторные номера, индивидуальный подход и забота на каждом этапе. Только спокойная обстановка, уют и персональное внимание к каждому гостю.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="news section section--light" id="news">
+            <div class="container">
+                <h2 class="section__title">Последние новости и предложения</h2>
+                <p class="section__subtitle">Будьте в курсе наших новых оздоровительных программ</p>
+                <div class="news__wrapper">
+                    <div class="news__track" id="newsTrack"></div>
+                    <button class="news__arrow news__arrow--prev" id="newsPrev">◂</button>
+                    <button class="news__arrow news__arrow--next" id="newsNext">▸</button>
+                </div>
+                <div class="news__dots" id="newsDots"></div>
+            </div>
+        </section>
+    </main>
+
+        <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <h2 class="footer__title">Санаторий Уручье</h2>
+                <p class="footer__desc">Премиальный медицинский спа-курорт в самом сердце Беларуси.</p>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">Навигация</h2>
+                <ul class="footer__list">
+                    <li><a href="index.html" class="footer__link">Главная</a></li>
+                    <li><a href="about.html" class="footer__link">О санатории</a></li>
+                    <li><a href="medicine.html" class="footer__link">Медицина</a></li>
+                    <li><a href="rooms.html" class="footer__link">Номера</a></li>
+                    <li><a href="booking.html" class="footer__link">Бронирование</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">Общее</h2>
+                <ul class="footer__list">
+                    <li><a href="medicine.html" class="footer__link">Лечение</a></li>
+                    <li><a href="index.html#news" class="footer__link">Новости</a></li>
+                    <li><a href="booking.html#map" class="footer__link">Как добраться</a></li>
+                    <li><a href="booking.html#help" class="footer__link">Помощь</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__title">Контакты</h2>
+                <p><img src="icons/phone.svg" alt="" width="22" height="22"> <a href="tel:+375296860307" class="footer__link">+375 29 686-03-07</a></p>
+                <p><img src="icons/email.svg" alt="" width="22" height="22"> <a href="mailto:info.uruchye@gmail.com" class="footer__link">info.uruchye@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer__bottom"><div class="container"><p>© 2026 Санаторий Уручье. Все права защищены.</p></div></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
